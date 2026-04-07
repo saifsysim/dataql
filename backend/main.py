@@ -1,6 +1,8 @@
 """DataQL — FastAPI backend for natural language data querying with multi-source connectors."""
 
 from __future__ import annotations
+import asyncio
+import json
 import os
 import time
 import uuid
@@ -9,6 +11,7 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from dotenv import load_dotenv
 
 from models import (
@@ -243,6 +246,153 @@ def query(request: QueryRequest):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/query/stream")
+async def query_stream(request: QueryRequest):
+    """Stream the query planning and execution process via SSE."""
+
+    async def event_generator():
+        total_start = time.perf_counter()
+        thread_id = request.thread_id or str(uuid.uuid4())
+        if thread_id not in threads:
+            threads[thread_id] = []
+        threads[thread_id].append(ThreadMessage(role="user", content=request.question))
+
+        def emit(event_type: str, data: dict):
+            payload = json.dumps(data, default=str)
+            return f"event: {event_type}\ndata: {payload}\n\n"
+
+        try:
+            # Phase 1: Schema introspection
+            yield emit("phase", {"phase": "schema", "message": "Introspecting connected schemas..."})
+            await asyncio.sleep(0)  # yield control
+            _, schema_context = _get_schemas()
+
+            yield emit("phase", {"phase": "schema_done", "message": "Schema loaded"})
+
+            # Phase 2: Query planning
+            yield emit("phase", {"phase": "planning", "message": "Analyzing question and building query plan..."})
+            await asyncio.sleep(0)
+            plan = generate_query_plan(request.question, schema_context)
+
+            # Send the plan to the client
+            plan_data = plan.model_dump()
+            yield emit("plan", {
+                "question": plan_data["question"],
+                "reasoning": plan_data["reasoning"],
+                "steps": [{
+                    "step_id": s["step_id"],
+                    "description": s["description"],
+                    "step_type": s["step_type"],
+                    "sql": s.get("sql"),
+                    "status": "pending",
+                } for s in plan_data["steps"]],
+            })
+
+            # Phase 3: Execution
+            yield emit("phase", {"phase": "executing", "message": "Executing query plan..."})
+            connector = _pick_connector_for_plan(plan)
+            engine = ExecutionEngine(connector)
+
+            # Execute steps one by one and stream results
+            artifacts = []
+            step_results = {}
+
+            for step in plan.steps:
+                yield emit("step_start", {
+                    "step_id": step.step_id,
+                    "description": step.description,
+                    "step_type": step.step_type.value,
+                    "sql": step.sql,
+                })
+                await asyncio.sleep(0)
+
+                step.status = StepStatus.RUNNING
+                artifact = engine._execute_step(step, step_results, plan)
+                artifacts.append(artifact)
+
+                artifact_data = artifact.model_dump()
+                yield emit("step_complete", {
+                    "step_id": artifact.step_id,
+                    "status": artifact.status.value,
+                    "description": artifact.description,
+                    "execution_time_ms": artifact.execution_time_ms,
+                    "row_count": artifact.row_count,
+                    "columns": artifact.columns,
+                    "error": artifact.error,
+                    "data": artifact_data["data"],
+                })
+
+                if artifact.status == StepStatus.FAILED:
+                    break
+
+                step_results[step.step_id] = artifact.data
+                step.status = StepStatus.COMPLETED
+
+            # Phase 4: Build answer
+            yield emit("phase", {"phase": "summarizing", "message": "Summarizing results..."})
+            await asyncio.sleep(0)
+
+            failed = [a for a in artifacts if a.status == StepStatus.FAILED]
+            if failed:
+                answer = f"I encountered an error: {failed[0].error}"
+            else:
+                summarize_artifacts = [
+                    a for a in artifacts
+                    if a.description.lower().startswith("summar") and a.data is not None
+                ]
+                if summarize_artifacts:
+                    answer = str(summarize_artifacts[-1].data)
+                elif artifacts:
+                    last = artifacts[-1]
+                    if isinstance(last.data, list) and last.data:
+                        if len(last.data) == 1:
+                            answer = ", ".join(f"{k}: {v}" for k, v in last.data[0].items())
+                        else:
+                            answer = f"Found {len(last.data)} results."
+                    else:
+                        answer = str(last.data) if last.data else "Query completed but returned no data."
+                else:
+                    answer = "No results."
+
+            total_ms = round((time.perf_counter() - total_start) * 1000, 2)
+
+            failed_count = len([a for a in artifacts if a.status == StepStatus.FAILED])
+            reliability = compute_reliability_score(
+                retries=0,
+                total_steps=len(plan.steps),
+                failed_steps=failed_count,
+                execution_time_ms=total_ms,
+                has_data=bool(artifacts and any(a.data for a in artifacts)),
+            )
+
+            # Final result
+            yield emit("result", {
+                "thread_id": thread_id,
+                "answer": answer,
+                "total_execution_time_ms": total_ms,
+                "retries": 0,
+                "reliability_score": reliability,
+            })
+
+            threads[thread_id].append(ThreadMessage(
+                role="assistant", content=answer,
+                plan=plan, artifacts=artifacts,
+            ))
+
+        except Exception as e:
+            yield emit("error", {"message": str(e)})
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        },
+    )
 
 
 def _pick_connector_for_plan(plan) -> "BaseConnector":

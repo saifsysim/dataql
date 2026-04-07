@@ -1,0 +1,151 @@
+ticket_id,customer_email,subject,priority,category,status,assigned_to,created_at,resolved_at,satisfaction_score
+TKT-1000,daniel.taylor@company.com,Can't access dashboard,high,billing,resolved,James White,2026-02-07 05:09:31,2026-03-31 03:17:31,3
+TKT-1001,penelope.young@company.com,SSO integration issue,medium,feature_request,resolved,Mia Davis,2026-03-25 14:06:31,2026-04-06 00:35:31,3
+TKT-1002,chloe.garcia@company.com,Data export failing,medium,security,resolved,Daniel Anderson,2026-02-08 22:44:31,2026-03-27 15:15:31,2
+TKT-1003,henry.davis@company.com,Performance degradation,medium,bug,resolved,Layla Clark,2026-02-02 21:43:31,2026-03-29 00:13:31,1
+TKT-1004,logan.miller@company.com,SSO integration issue,low,feature_request,resolved,Lucas Lewis,2026-01-15 11:44:31,2026-03-27 18:16:31,4
+TKT-1005,isabella.allen@company.com,Mobile app crash,medium,billing,resolved,Logan Thompson,2026-02-19 18:54:31,2026-04-05 17:27:31,
+TKT-1006,layla.young@company.com,Webhook not firing,medium,billing,waiting,Owen Wilson,2026-03-28 17:59:31,,
+TKT-1007,olivia.walker@company.com,SSO integration issue,critical,feature_request,in_progress,Sophia Moore,2026-01-28 12:39:31,,
+TKT-1008,james.jackson@company.com,Data export failing,high,billing,in_progress,Alexander Davis,2026-04-01 16:29:31,,
+TKT-1009,james.walker@company.com,Two-factor auth locked out,low,security,resolved,Charlotte Lee,2026-02-09 03:13:31,2026-04-06 14:49:31,5
+TKT-1010,sebastian.thomas@company.com,Two-factor auth locked out,low,feature_request,waiting,Owen Lewis,2026-01-24 17:38:31,,
+TKT-1011,mia.williams@company.com,Billing discrepancy,medium,billing,resolved,Chloe Lee,2026-02-19 15:37:31,2026-04-03 13:30:31,5
+TKT-1012,harper.wilson@company.com,API rate limit exceeded,high,feature_request,resolved,Owen Sanchez,2026-03-21 20:06:31,2026-03-29 01:34:31,
+TKT-1013,aiden.jackson@company.com,Two-factor auth locked out,low,bug,resolved,Ava Smith,2026-01-26 16:35:31,2026-04-06 09:25:31,5
+TKT-1014,amelia.walker@company.com,Billing discrepancy,critical,feature_request,in_progress,Liam Clark,2026-02-08 06:23:31,,
+TKT-1015,amelia.taylor@company.com,Billing discrepancy,low,billing,resolved,Luna Moore,2026-03-02 05:48:31,2026-04-06 01:26:31,3
+TKT-1016,alexander.martin@company.com,Webhook not firing,high,feature_request,resolved,Penelope Smith,2026-01-28 01:21:31,2026-04-03 05:13:31,5
+TKT-1017,liam.martin@company.com,Webhook not firing,high,billing,resolved,Sophia Thompson,2026-03-31 01:16:31,2026-04-05 21:25:31,2
+TKT-1018,olivia.thomas@company.com,Two-factor auth locked out,low,security,resolved,Logan Sanchez,2026-03-14 23:23:31,2026-04-05 13:59:31,4
+TKT-1019,ava.sanchez@company.com,Webhook not firing,medium,security,in_progress,Liam Garcia,2026-03-20 13:53:31,,
+TKT-1020,lucas.moore@company.com,API rate limit exceeded,medium,bug,resolved,Alexander Thompson,2026-03-04 11:52:31,2026-03-27 03:59:31,1
+TKT-1021,james.smith@company.com,Performance degradation,low,feature_request,resolved,James Lewis,2026-01-25 22:21:31,2026-04-04 23:31:31,5
+TKT-1022,ethan.white@company.com,Two-factor auth locked out,low,billing,open,Harper Miller,2026-01-24 12:10:31,,
+TKT-1023,sebastian.garcia@company.com,Permission error on reports,high,billing,resolved,Henry Robinson,2026-02-21 20:09:31,2026-04-04 04:41:31,4
+TKT-1024,isabella.brown@company.com,Performance degradation,high,billing,resolved,Alexander Brown,2026-04-03 05:02:31,2026-04-05 14:05:31,4
+TKT-1025,luna.lee@company.com,Webhook not firing,low,bug,resolved,Luna Lee,2026-03-13 04:55:31,2026-04-01 09:05:31,1
+TKT-1026,ethan.lewis@company.com,Webhook not firing,critical,feature_request,in_progress,Emma Allen,2026-02-22 16:41:31,,
+TKT-1027,jackson.williams@company.com,Performance degradation,low,billing,resolved,Isabella Wilson,2026-02-04 02:19:31,2026-03-28 20:10:31,2
+TKT-1028,logan.williams@company.com,Permission error on reports,critical,security,resolved,Olivia Wilson,2026-02-08 17:46:31,2026-03-31 11:37:31,5
+TKT-1029,emma.martin@company.com,Can't access dashboard,high,bug,resolved,Isabella Young,2026-02-04 04:40:31,2026-04-02 02:20:31,5
+TKT-1030,emma.martinez@company.com,Webhook not firing,high,feature_request,resolved,Harper Johnson,2026-01-23 06:53:31,2026-04-06 07:03:31,
+TKT-1031,luna.sanchez@company.com,Can't access dashboard,high,bug,resolved,Aiden Garcia,2026-02-10 00:32:31,2026-04-04 07:41:31,2
+TKT-1032,evelyn.smith@company.com,Can't access dashboard,low,billing,resolved,Alexander Sanchez,2026-02-25 21:19:31,2026-04-03 05:24:31,1
+TKT-1033,henry.davis@company.com,Performance degradation,low,bug,resolved,Noah Jones,2026-02-28 23:07:31,2026-04-01 18:40:31,5
+TKT-1034,owen.walker@company.com,SSO integration issue,high,feature_request,resolved,Charlotte Sanchez,2026-03-06 04:22:31,2026-03-31 02:28:31,1
+TKT-1035,evelyn.smith@company.com,Webhook not firing,critical,security,resolved,Noah Harris,2026-02-12 10:40:31,2026-04-03 08:48:31,
+TKT-1036,alexander.lewis@company.com,Permission error on reports,critical,billing,open,Harper Wilson,2026-03-09 21:24:31,,
+TKT-1037,isabella.martinez@company.com,Two-factor auth locked out,medium,bug,resolved,Daniel Brown,2026-03-16 00:48:31,2026-03-31 14:30:31,4
+TKT-1038,emma.jackson@company.com,Permission error on reports,critical,bug,resolved,Sophia Johnson,2026-03-12 21:29:31,2026-04-03 19:31:31,4
+TKT-1039,evelyn.anderson@company.com,Permission error on reports,high,security,resolved,Evelyn Ramirez,2026-03-14 21:16:31,2026-04-05 16:37:31,1
+TKT-1040,emma.perez@company.com,Can't access dashboard,high,feature_request,resolved,Penelope Rodriguez,2026-01-12 07:15:31,2026-04-03 00:44:31,2
+TKT-1041,noah.martinez@company.com,Mobile app crash,critical,billing,resolved,Ava White,2026-02-21 09:52:31,2026-04-06 11:40:31,2
+TKT-1042,sophia.thompson@company.com,Mobile app crash,medium,billing,resolved,Noah Lee,2026-02-23 02:18:31,2026-03-30 21:11:31,3
+TKT-1043,harper.smith@company.com,Two-factor auth locked out,high,feature_request,waiting,Mia Johnson,2026-03-30 20:21:31,,
+TKT-1044,emma.robinson@company.com,Webhook not firing,critical,billing,resolved,Daniel White,2026-03-19 20:21:31,2026-03-31 23:28:31,1
+TKT-1045,layla.perez@company.com,Webhook not firing,medium,security,in_progress,Aiden Allen,2026-01-24 07:00:31,,
+TKT-1046,amelia.allen@company.com,Billing discrepancy,low,feature_request,resolved,Sophia Jones,2026-03-07 02:33:31,2026-04-01 03:35:31,3
+TKT-1047,ava.anderson@company.com,Can't access dashboard,low,feature_request,resolved,Noah Johnson,2026-01-15 00:53:31,2026-03-31 15:08:31,4
+TKT-1048,henry.white@company.com,Performance degradation,high,security,resolved,Charlotte Young,2026-02-13 01:08:31,2026-04-03 11:56:31,4
+TKT-1049,lucas.wilson@company.com,Webhook not firing,high,billing,resolved,Sophia Miller,2026-02-07 00:36:31,2026-03-31 09:41:31,
+TKT-1050,alexander.moore@company.com,Mobile app crash,low,feature_request,resolved,Caleb Martinez,2026-03-13 05:52:31,2026-03-27 04:41:31,2
+TKT-1051,aiden.martinez@company.com,Two-factor auth locked out,low,bug,waiting,Ethan Miller,2026-02-15 19:34:31,,
+TKT-1052,layla.martin@company.com,Webhook not firing,high,security,in_progress,James Sanchez,2026-02-22 06:08:31,,
+TKT-1053,sebastian.ramirez@company.com,Billing discrepancy,low,billing,resolved,Noah Taylor,2026-03-11 11:28:31,2026-04-02 00:21:31,3
+TKT-1054,layla.ramirez@company.com,Two-factor auth locked out,critical,bug,resolved,Chloe Williams,2026-02-06 16:09:31,2026-03-30 13:25:31,1
+TKT-1055,liam.wilson@company.com,Performance degradation,high,billing,resolved,Ethan Martinez,2026-04-04 23:06:31,2026-04-06 13:10:31,1
+TKT-1056,owen.garcia@company.com,SSO integration issue,medium,bug,resolved,Chloe Lee,2026-02-19 04:06:31,2026-03-30 08:43:31,2
+TKT-1057,charlotte.garcia@company.com,Mobile app crash,low,feature_request,waiting,Owen Walker,2026-03-18 18:38:31,,
+TKT-1058,emma.jones@company.com,Webhook not firing,low,security,resolved,Amelia Garcia,2026-03-06 20:22:31,2026-03-30 20:16:31,1
+TKT-1059,ava.moore@company.com,Can't access dashboard,low,feature_request,resolved,Alexander Wilson,2026-01-21 01:12:31,2026-03-30 05:28:31,1
+TKT-1060,luna.thomas@company.com,Billing discrepancy,critical,billing,in_progress,Caleb Wilson,2026-02-18 21:53:31,,
+TKT-1061,chloe.jackson@company.com,Can't access dashboard,low,billing,resolved,Mia Walker,2026-02-28 01:14:31,2026-04-05 12:26:31,3
+TKT-1062,alexander.garcia@company.com,Can't access dashboard,high,feature_request,resolved,Mason Moore,2026-03-13 07:47:31,2026-04-06 08:44:31,4
+TKT-1063,liam.wilson@company.com,Mobile app crash,critical,billing,resolved,Penelope Allen,2026-02-22 22:47:31,2026-03-27 09:22:31,5
+TKT-1064,ethan.young@company.com,Permission error on reports,low,security,in_progress,Emma Sanchez,2026-04-05 00:28:31,,
+TKT-1065,chloe.taylor@company.com,Webhook not firing,medium,billing,resolved,Mia Clark,2026-01-10 15:20:31,2026-04-01 07:10:31,3
+TKT-1066,luna.williams@company.com,Performance degradation,critical,bug,resolved,Chloe Jones,2026-01-26 17:33:31,2026-04-05 09:06:31,1
+TKT-1067,sophia.ramirez@company.com,API rate limit exceeded,critical,bug,resolved,Ella Smith,2026-03-06 21:53:31,2026-04-04 05:13:31,
+TKT-1068,penelope.moore@company.com,Performance degradation,critical,bug,waiting,Emma Sanchez,2026-02-22 05:00:31,,
+TKT-1069,owen.williams@company.com,Can't access dashboard,low,billing,resolved,Ethan Johnson,2026-03-20 17:06:31,2026-04-05 18:59:31,
+TKT-1070,ethan.sanchez@company.com,Permission error on reports,high,security,resolved,Isabella Clark,2026-03-27 11:44:31,2026-04-03 08:12:31,
+TKT-1071,liam.garcia@company.com,Data export failing,medium,billing,open,Alexander Lee,2026-01-21 22:36:31,,
+TKT-1072,ethan.garcia@company.com,Performance degradation,high,billing,open,Logan White,2026-01-23 17:20:31,,
+TKT-1073,charlotte.rodriguez@company.com,Performance degradation,high,bug,resolved,Caleb Young,2026-01-21 14:26:31,2026-03-27 14:51:31,
+TKT-1074,liam.jackson@company.com,Performance degradation,critical,security,open,Liam Harris,2026-03-05 14:16:31,,
+TKT-1075,layla.allen@company.com,Performance degradation,critical,feature_request,resolved,Ella Robinson,2026-02-08 23:17:31,2026-04-01 05:15:31,3
+TKT-1076,daniel.jackson@company.com,Performance degradation,high,billing,resolved,Sebastian Garcia,2026-02-08 12:17:31,2026-04-01 08:45:31,1
+TKT-1077,chloe.walker@company.com,Webhook not firing,low,security,resolved,Aiden Jones,2026-01-08 12:38:31,2026-03-30 13:05:31,2
+TKT-1078,caleb.jones@company.com,Webhook not firing,medium,bug,resolved,Charlotte Lewis,2026-02-16 11:03:31,2026-04-01 11:09:31,
+TKT-1079,logan.jackson@company.com,Billing discrepancy,medium,feature_request,resolved,Ethan Smith,2026-03-15 19:27:31,2026-04-03 21:03:31,4
+TKT-1080,ethan.jackson@company.com,Two-factor auth locked out,low,security,resolved,Charlotte Walker,2026-02-15 18:45:31,2026-03-29 15:50:31,2
+TKT-1081,owen.jackson@company.com,Two-factor auth locked out,medium,billing,resolved,Sophia Martin,2026-02-03 03:01:31,2026-04-05 21:44:31,4
+TKT-1082,caleb.garcia@company.com,Performance degradation,medium,security,in_progress,Evelyn Brown,2026-03-10 10:33:31,,
+TKT-1083,noah.anderson@company.com,Two-factor auth locked out,low,bug,resolved,James Moore,2026-01-20 19:31:31,2026-04-01 01:09:31,3
+TKT-1084,layla.young@company.com,Permission error on reports,medium,feature_request,resolved,Sebastian Lewis,2026-02-12 16:51:31,2026-04-03 13:24:31,3
+TKT-1085,chloe.white@company.com,Two-factor auth locked out,high,billing,in_progress,Henry Robinson,2026-01-07 17:07:31,,
+TKT-1086,alexander.brown@company.com,Webhook not firing,high,feature_request,resolved,Liam Martin,2026-03-06 08:28:31,2026-04-06 13:32:31,4
+TKT-1087,logan.ramirez@company.com,Data export failing,medium,billing,resolved,Mia Walker,2026-02-06 04:07:31,2026-04-02 21:36:31,1
+TKT-1088,evelyn.jackson@company.com,Mobile app crash,high,feature_request,resolved,Lucas Jackson,2026-02-05 16:50:31,2026-04-01 12:12:31,3
+TKT-1089,evelyn.thompson@company.com,API rate limit exceeded,medium,bug,resolved,Ella Young,2026-01-19 06:52:31,2026-03-27 17:05:31,2
+TKT-1090,henry.walker@company.com,Can't access dashboard,medium,feature_request,resolved,Ethan Jones,2026-01-29 07:46:31,2026-03-31 10:20:31,3
+TKT-1091,aiden.ramirez@company.com,Billing discrepancy,low,security,resolved,Harper Garcia,2026-04-03 23:23:31,2026-03-31 21:41:31,5
+TKT-1092,owen.thompson@company.com,Permission error on reports,medium,billing,resolved,Sebastian Jones,2026-02-09 13:58:31,2026-03-30 15:52:31,3
+TKT-1093,noah.wilson@company.com,Webhook not firing,critical,security,resolved,Caleb Wilson,2026-04-04 21:01:31,2026-03-29 08:41:31,4
+TKT-1094,lucas.perez@company.com,Two-factor auth locked out,critical,bug,resolved,Ella Sanchez,2026-03-15 13:25:31,2026-04-06 03:46:31,
+TKT-1095,jackson.garcia@company.com,Data export failing,critical,feature_request,resolved,Mia Wilson,2026-03-21 09:00:31,2026-04-04 19:58:31,1
+TKT-1096,harper.johnson@company.com,Mobile app crash,low,security,in_progress,Owen Jones,2026-02-13 13:16:31,,
+TKT-1097,layla.walker@company.com,SSO integration issue,high,billing,resolved,Emma White,2026-01-26 21:12:31,2026-04-04 20:16:31,
+TKT-1098,emma.davis@company.com,Data export failing,high,billing,resolved,Jackson Wilson,2026-01-26 00:01:31,2026-04-03 09:02:31,3
+TKT-1099,james.harris@company.com,Webhook not firing,critical,bug,resolved,Ethan Perez,2026-02-16 03:22:31,2026-03-29 14:33:31,1
+TKT-1100,sebastian.young@company.com,Performance degradation,high,security,resolved,Ethan Jones,2026-03-11 16:27:31,2026-04-01 01:59:31,5
+TKT-1101,jackson.thomas@company.com,Billing discrepancy,high,feature_request,resolved,Lucas Miller,2026-04-06 03:17:31,2026-04-02 06:41:31,3
+TKT-1102,evelyn.white@company.com,Mobile app crash,low,billing,resolved,Ava Brown,2026-03-04 11:57:31,2026-03-30 23:36:31,1
+TKT-1103,sebastian.clark@company.com,SSO integration issue,high,feature_request,resolved,Mia Moore,2026-02-16 20:17:31,2026-04-03 17:16:31,1
+TKT-1104,james.martinez@company.com,Can't access dashboard,high,billing,resolved,Penelope Wilson,2026-01-14 03:50:31,2026-04-02 17:32:31,2
+TKT-1105,daniel.garcia@company.com,Permission error on reports,low,feature_request,resolved,Chloe Harris,2026-02-02 00:40:31,2026-03-30 11:26:31,2
+TKT-1106,penelope.smith@company.com,SSO integration issue,critical,feature_request,resolved,Aiden Thomas,2026-03-28 04:58:31,2026-04-06 05:01:31,
+TKT-1107,caleb.miller@company.com,Webhook not firing,medium,bug,open,Mason Taylor,2026-01-24 18:58:31,,
+TKT-1108,mason.moore@company.com,Data export failing,critical,bug,resolved,Alexander Allen,2026-01-13 23:45:31,2026-04-05 14:55:31,4
+TKT-1109,aiden.walker@company.com,Two-factor auth locked out,medium,feature_request,open,James Sanchez,2026-03-15 23:57:31,,
+TKT-1110,logan.harris@company.com,Webhook not firing,critical,bug,resolved,Amelia Taylor,2026-01-24 09:00:31,2026-04-04 18:00:31,4
+TKT-1111,daniel.young@company.com,SSO integration issue,medium,security,resolved,Ethan Lewis,2026-02-13 19:04:31,2026-04-06 03:00:31,3
+TKT-1112,aiden.lewis@company.com,Can't access dashboard,critical,security,resolved,Harper Sanchez,2026-04-03 02:47:31,2026-04-03 16:20:31,4
+TKT-1113,evelyn.anderson@company.com,Permission error on reports,low,billing,resolved,Mia Harris,2026-03-08 01:10:31,2026-04-02 12:59:31,3
+TKT-1114,ava.perez@company.com,Webhook not firing,medium,security,resolved,Mia Ramirez,2026-01-26 06:55:31,2026-03-27 12:38:31,3
+TKT-1115,mia.taylor@company.com,API rate limit exceeded,medium,billing,resolved,Lucas Allen,2026-03-19 02:16:31,2026-03-27 06:38:31,3
+TKT-1116,emma.wilson@company.com,Mobile app crash,high,feature_request,resolved,Harper White,2026-01-14 09:36:31,2026-03-27 18:08:31,
+TKT-1117,liam.robinson@company.com,Webhook not firing,critical,bug,resolved,Jackson Brown,2026-03-17 05:56:31,2026-04-03 01:39:31,5
+TKT-1118,luna.sanchez@company.com,Performance degradation,low,bug,resolved,Lucas Clark,2026-04-06 15:05:31,2026-04-04 00:50:31,3
+TKT-1119,mia.clark@company.com,Webhook not firing,critical,billing,resolved,Caleb White,2026-01-26 11:31:31,2026-03-31 16:28:31,4
+TKT-1120,olivia.jackson@company.com,Billing discrepancy,critical,feature_request,resolved,Sophia Ramirez,2026-03-18 01:07:31,2026-04-06 07:13:31,4
+TKT-1121,james.martinez@company.com,API rate limit exceeded,high,billing,resolved,Henry Ramirez,2026-02-27 17:30:31,2026-04-04 00:03:31,
+TKT-1122,luna.thomas@company.com,Can't access dashboard,medium,feature_request,resolved,Logan Anderson,2026-03-28 21:48:31,2026-04-05 10:42:31,2
+TKT-1123,sebastian.johnson@company.com,Permission error on reports,critical,security,resolved,Lucas Anderson,2026-02-27 10:25:31,2026-03-30 03:25:31,1
+TKT-1124,olivia.taylor@company.com,Two-factor auth locked out,medium,security,resolved,James Thomas,2026-03-05 01:34:31,2026-03-31 06:15:31,1
+TKT-1125,ella.robinson@company.com,API rate limit exceeded,low,security,resolved,Ella Wilson,2026-02-03 21:34:31,2026-04-05 21:49:31,2
+TKT-1126,aiden.miller@company.com,Two-factor auth locked out,low,bug,resolved,James Harris,2026-01-19 09:02:31,2026-03-29 01:10:31,2
+TKT-1127,aiden.williams@company.com,Mobile app crash,high,security,waiting,Mason Sanchez,2026-01-21 02:15:31,,
+TKT-1128,mason.perez@company.com,API rate limit exceeded,low,billing,resolved,Alexander Moore,2026-01-24 11:13:31,2026-03-27 01:01:31,3
+TKT-1129,noah.robinson@company.com,API rate limit exceeded,high,security,resolved,Amelia Davis,2026-03-17 22:46:31,2026-03-31 20:21:31,1
+TKT-1130,isabella.garcia@company.com,Data export failing,medium,security,resolved,Sophia Sanchez,2026-02-16 00:13:31,2026-04-04 12:02:31,4
+TKT-1131,ella.thompson@company.com,Two-factor auth locked out,critical,security,open,Amelia Anderson,2026-01-07 20:58:31,,
+TKT-1132,olivia.taylor@company.com,Permission error on reports,critical,feature_request,resolved,Charlotte Lee,2026-01-07 11:03:31,2026-04-01 03:30:31,
+TKT-1133,mia.jackson@company.com,Webhook not firing,high,billing,waiting,Olivia Smith,2026-02-11 22:00:31,,
+TKT-1134,aiden.harris@company.com,Mobile app crash,medium,feature_request,open,Amelia Williams,2026-03-17 21:28:31,,
+TKT-1135,ethan.jones@company.com,SSO integration issue,high,security,resolved,James Anderson,2026-01-12 18:27:31,2026-03-29 22:50:31,1
+TKT-1136,james.martinez@company.com,Billing discrepancy,medium,billing,resolved,Penelope Jackson,2026-01-31 23:57:31,2026-04-02 05:31:31,2
+TKT-1137,logan.lee@company.com,Mobile app crash,critical,billing,resolved,Luna Jones,2026-03-13 02:34:31,2026-04-03 20:53:31,5
+TKT-1138,sophia.white@company.com,Webhook not firing,medium,billing,resolved,Henry Rodriguez,2026-03-19 21:34:31,2026-04-05 05:54:31,4
+TKT-1139,luna.clark@company.com,Performance degradation,low,security,resolved,Evelyn Robinson,2026-03-30 11:02:31,2026-03-31 23:52:31,2
+TKT-1140,penelope.ramirez@company.com,Billing discrepancy,high,feature_request,resolved,Amelia Ramirez,2026-03-21 08:25:31,2026-03-29 10:23:31,1
+TKT-1141,alexander.ramirez@company.com,Billing discrepancy,critical,feature_request,resolved,Mason Thomas,2026-02-10 05:03:31,2026-03-29 21:19:31,3
+TKT-1142,harper.thompson@company.com,Performance degradation,medium,security,resolved,Jackson Jackson,2026-02-06 03:13:31,2026-04-01 14:11:31,4
+TKT-1143,luna.lewis@company.com,Two-factor auth locked out,high,security,resolved,Lucas Williams,2026-01-08 05:20:31,2026-03-27 04:26:31,
+TKT-1144,caleb.rodriguez@company.com,SSO integration issue,medium,billing,resolved,Lucas Allen,2026-02-03 13:30:31,2026-03-27 21:48:31,3
+TKT-1145,lucas.martin@company.com,Webhook not firing,medium,feature_request,resolved,Evelyn Taylor,2026-03-07 05:52:31,2026-04-02 17:12:31,
+TKT-1146,ethan.harris@company.com,Performance degradation,medium,billing,resolved,Chloe Moore,2026-01-12 17:15:31,2026-04-04 01:46:31,5
+TKT-1147,ethan.thompson@company.com,Performance degradation,high,security,resolved,Mia Davis,2026-01-30 18:57:31,2026-04-02 03:49:31,4
+TKT-1148,noah.rodriguez@company.com,Two-factor auth locked out,critical,feature_request,resolved,Olivia Thomas,2026-02-04 01:47:31,2026-03-30 06:43:31,5
+TKT-1149,layla.jackson@company.com,Permission error on reports,medium,security,in_progress,Ethan Rodriguez,2026-02-16 00:00:31,,

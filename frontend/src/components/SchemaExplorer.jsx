@@ -36,6 +36,13 @@ export default function SchemaExplorer({ schema, isOpen, onClose, initialTab }) 
     }
   }, [isOpen]);
 
+  // Close on Escape key
+  useEffect(() => {
+    const handleKey = (e) => { if (e.key === 'Escape' && isOpen) onClose(); };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [isOpen, onClose]);
+
   const toggleTable = (name) => {
     setCollapsed(prev => {
       const next = new Set(prev);
@@ -63,6 +70,10 @@ export default function SchemaExplorer({ schema, isOpen, onClose, initialTab }) 
   return (
     <div className={`schema-drawer ${isOpen ? 'open' : ''}`}>
       <div className="schema-drawer-header">
+        <button className="cx-back-btn" onClick={onClose} title="Back to Chat (Esc)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+          <span>Chat</span>
+        </button>
         <h2>🗄️ Data Sources</h2>
         <button className="schema-close-btn" onClick={onClose}>×</button>
       </div>

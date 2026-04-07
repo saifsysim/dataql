@@ -1,0 +1,2602 @@
+[
+  {
+    "event_id": "evt_153470",
+    "user_id": "usr_1109",
+    "feature": "data_export",
+    "action": "delete",
+    "timestamp": "2026-04-03 08:37:31",
+    "duration_ms": 12777,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_289902",
+    "user_id": "usr_1031",
+    "feature": "billing",
+    "action": "view",
+    "timestamp": "2026-04-05 21:47:31",
+    "duration_ms": 3621,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_879116",
+    "user_id": "usr_1175",
+    "feature": "team_management",
+    "action": "click",
+    "timestamp": "2026-04-05 02:28:31",
+    "duration_ms": 2062,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_754688",
+    "user_id": "usr_1184",
+    "feature": "settings",
+    "action": "create",
+    "timestamp": "2026-03-24 16:50:31",
+    "duration_ms": 7323,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_981609",
+    "user_id": "usr_1060",
+    "feature": "api",
+    "action": "view",
+    "timestamp": "2026-03-20 05:44:31",
+    "duration_ms": 25080,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_313008",
+    "user_id": "usr_1138",
+    "feature": "search",
+    "action": "view",
+    "timestamp": "2026-03-07 18:59:31",
+    "duration_ms": 18818,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_200331",
+    "user_id": "usr_1063",
+    "feature": "team_management",
+    "action": "click",
+    "timestamp": "2026-03-30 09:25:31",
+    "duration_ms": 5527,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_212603",
+    "user_id": "usr_1000",
+    "feature": "integrations",
+    "action": "export",
+    "timestamp": "2026-03-28 10:27:31",
+    "duration_ms": 28309,
+    "metadata": {
+      "browser": "Edge",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_343459",
+    "user_id": "usr_1025",
+    "feature": "reports",
+    "action": "update",
+    "timestamp": "2026-03-15 09:36:31",
+    "duration_ms": 5027,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_124145",
+    "user_id": "usr_1138",
+    "feature": "settings",
+    "action": "click",
+    "timestamp": "2026-03-09 02:33:31",
+    "duration_ms": 14408,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_623273",
+    "user_id": "usr_1129",
+    "feature": "search",
+    "action": "update",
+    "timestamp": "2026-03-11 09:26:31",
+    "duration_ms": 6832,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_730145",
+    "user_id": "usr_1178",
+    "feature": "team_management",
+    "action": "click",
+    "timestamp": "2026-03-12 11:51:31",
+    "duration_ms": 7241,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_387458",
+    "user_id": "usr_1063",
+    "feature": "settings",
+    "action": "click",
+    "timestamp": "2026-03-25 04:08:31",
+    "duration_ms": 15491,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_776831",
+    "user_id": "usr_1178",
+    "feature": "reports",
+    "action": "update",
+    "timestamp": "2026-03-15 23:40:31",
+    "duration_ms": 18832,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_121489",
+    "user_id": "usr_1125",
+    "feature": "team_management",
+    "action": "export",
+    "timestamp": "2026-03-23 10:59:31",
+    "duration_ms": 14431,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_382194",
+    "user_id": "usr_1093",
+    "feature": "settings",
+    "action": "update",
+    "timestamp": "2026-04-01 18:50:31",
+    "duration_ms": 28072,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "macOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_482281",
+    "user_id": "usr_1012",
+    "feature": "integrations",
+    "action": "view",
+    "timestamp": "2026-03-15 18:59:31",
+    "duration_ms": 20267,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_650768",
+    "user_id": "usr_1065",
+    "feature": "data_export",
+    "action": "click",
+    "timestamp": "2026-03-28 19:10:31",
+    "duration_ms": 14383,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_529354",
+    "user_id": "usr_1079",
+    "feature": "api",
+    "action": "delete",
+    "timestamp": "2026-04-04 16:09:31",
+    "duration_ms": 3123,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_402244",
+    "user_id": "usr_1140",
+    "feature": "data_export",
+    "action": "update",
+    "timestamp": "2026-03-09 18:49:31",
+    "duration_ms": 663,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_170655",
+    "user_id": "usr_1197",
+    "feature": "reports",
+    "action": "create",
+    "timestamp": "2026-03-11 18:30:31",
+    "duration_ms": 4167,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_858339",
+    "user_id": "usr_1045",
+    "feature": "api",
+    "action": "delete",
+    "timestamp": "2026-03-08 18:49:31",
+    "duration_ms": 25885,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_903575",
+    "user_id": "usr_1069",
+    "feature": "alerts",
+    "action": "view",
+    "timestamp": "2026-03-21 07:07:31",
+    "duration_ms": 1962,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Windows",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_150692",
+    "user_id": "usr_1120",
+    "feature": "api",
+    "action": "click",
+    "timestamp": "2026-03-30 04:11:31",
+    "duration_ms": 12132,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_577043",
+    "user_id": "usr_1044",
+    "feature": "reports",
+    "action": "export",
+    "timestamp": "2026-03-30 18:24:31",
+    "duration_ms": 19957,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_242505",
+    "user_id": "usr_1000",
+    "feature": "settings",
+    "action": "update",
+    "timestamp": "2026-03-21 08:21:31",
+    "duration_ms": 24815,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_650555",
+    "user_id": "usr_1119",
+    "feature": "alerts",
+    "action": "create",
+    "timestamp": "2026-03-12 04:28:31",
+    "duration_ms": 23639,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_275002",
+    "user_id": "usr_1128",
+    "feature": "data_export",
+    "action": "click",
+    "timestamp": "2026-03-12 22:51:31",
+    "duration_ms": 2505,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_733754",
+    "user_id": "usr_1105",
+    "feature": "team_management",
+    "action": "update",
+    "timestamp": "2026-03-28 13:03:31",
+    "duration_ms": 10407,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_326041",
+    "user_id": "usr_1111",
+    "feature": "api",
+    "action": "update",
+    "timestamp": "2026-03-10 05:14:31",
+    "duration_ms": 24962,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_356368",
+    "user_id": "usr_1036",
+    "feature": "dashboard",
+    "action": "click",
+    "timestamp": "2026-03-09 09:48:31",
+    "duration_ms": 16050,
+    "metadata": {
+      "browser": "Edge",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_489616",
+    "user_id": "usr_1052",
+    "feature": "data_export",
+    "action": "click",
+    "timestamp": "2026-03-24 22:49:31",
+    "duration_ms": 4868,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_155699",
+    "user_id": "usr_1089",
+    "feature": "data_export",
+    "action": "update",
+    "timestamp": "2026-03-09 03:09:31",
+    "duration_ms": 14301,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_472007",
+    "user_id": "usr_1131",
+    "feature": "alerts",
+    "action": "update",
+    "timestamp": "2026-04-05 09:00:31",
+    "duration_ms": 11650,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_631331",
+    "user_id": "usr_1042",
+    "feature": "dashboard",
+    "action": "view",
+    "timestamp": "2026-04-02 00:19:31",
+    "duration_ms": 18502,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_634256",
+    "user_id": "usr_1055",
+    "feature": "alerts",
+    "action": "create",
+    "timestamp": "2026-04-06 09:39:31",
+    "duration_ms": 11045,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Linux",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_398767",
+    "user_id": "usr_1094",
+    "feature": "dashboard",
+    "action": "delete",
+    "timestamp": "2026-03-19 20:08:31",
+    "duration_ms": 14465,
+    "metadata": {
+      "browser": "Edge",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_798687",
+    "user_id": "usr_1199",
+    "feature": "alerts",
+    "action": "export",
+    "timestamp": "2026-03-14 05:32:31",
+    "duration_ms": 2304,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_792706",
+    "user_id": "usr_1182",
+    "feature": "data_export",
+    "action": "export",
+    "timestamp": "2026-03-14 03:47:31",
+    "duration_ms": 4817,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_746839",
+    "user_id": "usr_1098",
+    "feature": "settings",
+    "action": "update",
+    "timestamp": "2026-03-30 23:02:31",
+    "duration_ms": 10025,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_538698",
+    "user_id": "usr_1145",
+    "feature": "integrations",
+    "action": "update",
+    "timestamp": "2026-03-12 19:37:31",
+    "duration_ms": 18025,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_169445",
+    "user_id": "usr_1041",
+    "feature": "dashboard",
+    "action": "create",
+    "timestamp": "2026-03-14 08:14:31",
+    "duration_ms": 2265,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_805284",
+    "user_id": "usr_1126",
+    "feature": "reports",
+    "action": "view",
+    "timestamp": "2026-03-16 09:13:31",
+    "duration_ms": 29571,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_991912",
+    "user_id": "usr_1120",
+    "feature": "settings",
+    "action": "delete",
+    "timestamp": "2026-03-20 06:08:31",
+    "duration_ms": 29634,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_800188",
+    "user_id": "usr_1174",
+    "feature": "search",
+    "action": "delete",
+    "timestamp": "2026-03-16 15:13:31",
+    "duration_ms": 19559,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_554949",
+    "user_id": "usr_1123",
+    "feature": "settings",
+    "action": "create",
+    "timestamp": "2026-03-07 07:45:31",
+    "duration_ms": 16447,
+    "metadata": {
+      "browser": "Edge",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_940615",
+    "user_id": "usr_1065",
+    "feature": "reports",
+    "action": "click",
+    "timestamp": "2026-03-20 16:10:31",
+    "duration_ms": 25772,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_260702",
+    "user_id": "usr_1025",
+    "feature": "alerts",
+    "action": "delete",
+    "timestamp": "2026-03-26 10:17:31",
+    "duration_ms": 13202,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_413612",
+    "user_id": "usr_1020",
+    "feature": "integrations",
+    "action": "click",
+    "timestamp": "2026-03-18 08:05:31",
+    "duration_ms": 21821,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_556784",
+    "user_id": "usr_1103",
+    "feature": "team_management",
+    "action": "click",
+    "timestamp": "2026-03-24 09:03:31",
+    "duration_ms": 11037,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_347130",
+    "user_id": "usr_1124",
+    "feature": "data_export",
+    "action": "update",
+    "timestamp": "2026-03-19 17:39:31",
+    "duration_ms": 14193,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_740231",
+    "user_id": "usr_1042",
+    "feature": "billing",
+    "action": "click",
+    "timestamp": "2026-03-18 13:27:31",
+    "duration_ms": 12448,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_186308",
+    "user_id": "usr_1188",
+    "feature": "dashboard",
+    "action": "click",
+    "timestamp": "2026-03-20 10:33:31",
+    "duration_ms": 29479,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_102188",
+    "user_id": "usr_1120",
+    "feature": "api",
+    "action": "view",
+    "timestamp": "2026-04-02 14:11:31",
+    "duration_ms": 12118,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_142393",
+    "user_id": "usr_1042",
+    "feature": "settings",
+    "action": "create",
+    "timestamp": "2026-04-03 22:27:31",
+    "duration_ms": 2798,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_961331",
+    "user_id": "usr_1049",
+    "feature": "api",
+    "action": "update",
+    "timestamp": "2026-03-11 08:58:31",
+    "duration_ms": 8859,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_972207",
+    "user_id": "usr_1156",
+    "feature": "settings",
+    "action": "click",
+    "timestamp": "2026-04-04 09:26:31",
+    "duration_ms": 28031,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_620529",
+    "user_id": "usr_1155",
+    "feature": "integrations",
+    "action": "export",
+    "timestamp": "2026-03-28 22:39:31",
+    "duration_ms": 28023,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_949630",
+    "user_id": "usr_1115",
+    "feature": "billing",
+    "action": "delete",
+    "timestamp": "2026-03-28 14:23:31",
+    "duration_ms": 23222,
+    "metadata": {
+      "browser": "Edge",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_932839",
+    "user_id": "usr_1079",
+    "feature": "billing",
+    "action": "click",
+    "timestamp": "2026-03-30 09:55:31",
+    "duration_ms": 23143,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_161601",
+    "user_id": "usr_1150",
+    "feature": "reports",
+    "action": "click",
+    "timestamp": "2026-04-03 09:56:31",
+    "duration_ms": 4993,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_821132",
+    "user_id": "usr_1081",
+    "feature": "search",
+    "action": "click",
+    "timestamp": "2026-03-15 08:37:31",
+    "duration_ms": 13530,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_843556",
+    "user_id": "usr_1053",
+    "feature": "data_export",
+    "action": "export",
+    "timestamp": "2026-04-05 12:54:31",
+    "duration_ms": 12905,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_151288",
+    "user_id": "usr_1008",
+    "feature": "settings",
+    "action": "update",
+    "timestamp": "2026-04-01 08:35:31",
+    "duration_ms": 21672,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_239359",
+    "user_id": "usr_1083",
+    "feature": "team_management",
+    "action": "export",
+    "timestamp": "2026-03-27 05:09:31",
+    "duration_ms": 23032,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "macOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_362773",
+    "user_id": "usr_1106",
+    "feature": "reports",
+    "action": "update",
+    "timestamp": "2026-03-09 13:55:31",
+    "duration_ms": 1477,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_391359",
+    "user_id": "usr_1051",
+    "feature": "api",
+    "action": "update",
+    "timestamp": "2026-04-05 23:24:31",
+    "duration_ms": 11920,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_453558",
+    "user_id": "usr_1000",
+    "feature": "reports",
+    "action": "update",
+    "timestamp": "2026-03-13 07:52:31",
+    "duration_ms": 7016,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_656656",
+    "user_id": "usr_1100",
+    "feature": "alerts",
+    "action": "delete",
+    "timestamp": "2026-03-18 04:52:31",
+    "duration_ms": 14352,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "iOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_664964",
+    "user_id": "usr_1193",
+    "feature": "data_export",
+    "action": "view",
+    "timestamp": "2026-03-28 14:03:31",
+    "duration_ms": 13447,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_586060",
+    "user_id": "usr_1155",
+    "feature": "search",
+    "action": "click",
+    "timestamp": "2026-03-08 13:11:31",
+    "duration_ms": 19462,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_414869",
+    "user_id": "usr_1166",
+    "feature": "dashboard",
+    "action": "click",
+    "timestamp": "2026-03-16 05:48:31",
+    "duration_ms": 13037,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_142513",
+    "user_id": "usr_1056",
+    "feature": "data_export",
+    "action": "click",
+    "timestamp": "2026-03-25 23:37:31",
+    "duration_ms": 1665,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_117137",
+    "user_id": "usr_1128",
+    "feature": "settings",
+    "action": "delete",
+    "timestamp": "2026-03-16 22:33:31",
+    "duration_ms": 19111,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_917548",
+    "user_id": "usr_1029",
+    "feature": "integrations",
+    "action": "update",
+    "timestamp": "2026-03-20 00:43:31",
+    "duration_ms": 5907,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "macOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_183547",
+    "user_id": "usr_1084",
+    "feature": "integrations",
+    "action": "update",
+    "timestamp": "2026-04-06 20:56:31",
+    "duration_ms": 24656,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_804444",
+    "user_id": "usr_1065",
+    "feature": "team_management",
+    "action": "click",
+    "timestamp": "2026-03-09 10:51:31",
+    "duration_ms": 23993,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_902257",
+    "user_id": "usr_1073",
+    "feature": "settings",
+    "action": "delete",
+    "timestamp": "2026-03-15 06:24:31",
+    "duration_ms": 2347,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_994467",
+    "user_id": "usr_1000",
+    "feature": "integrations",
+    "action": "view",
+    "timestamp": "2026-03-13 15:53:31",
+    "duration_ms": 3814,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_624773",
+    "user_id": "usr_1196",
+    "feature": "alerts",
+    "action": "update",
+    "timestamp": "2026-03-21 20:34:31",
+    "duration_ms": 21988,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_927326",
+    "user_id": "usr_1023",
+    "feature": "billing",
+    "action": "click",
+    "timestamp": "2026-03-25 17:30:31",
+    "duration_ms": 8301,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_166514",
+    "user_id": "usr_1041",
+    "feature": "api",
+    "action": "create",
+    "timestamp": "2026-04-01 07:12:31",
+    "duration_ms": 22694,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_131236",
+    "user_id": "usr_1087",
+    "feature": "team_management",
+    "action": "update",
+    "timestamp": "2026-04-03 07:15:31",
+    "duration_ms": 26701,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Windows",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_299380",
+    "user_id": "usr_1158",
+    "feature": "data_export",
+    "action": "delete",
+    "timestamp": "2026-03-14 02:00:31",
+    "duration_ms": 24500,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_506087",
+    "user_id": "usr_1082",
+    "feature": "billing",
+    "action": "click",
+    "timestamp": "2026-03-09 23:02:31",
+    "duration_ms": 14940,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_117953",
+    "user_id": "usr_1170",
+    "feature": "billing",
+    "action": "export",
+    "timestamp": "2026-03-27 10:17:31",
+    "duration_ms": 27543,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_189365",
+    "user_id": "usr_1034",
+    "feature": "reports",
+    "action": "delete",
+    "timestamp": "2026-03-21 06:15:31",
+    "duration_ms": 3917,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_680476",
+    "user_id": "usr_1141",
+    "feature": "billing",
+    "action": "view",
+    "timestamp": "2026-03-18 22:14:31",
+    "duration_ms": 27468,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_663170",
+    "user_id": "usr_1108",
+    "feature": "settings",
+    "action": "view",
+    "timestamp": "2026-03-10 21:01:31",
+    "duration_ms": 9937,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_260470",
+    "user_id": "usr_1071",
+    "feature": "billing",
+    "action": "update",
+    "timestamp": "2026-04-04 07:41:31",
+    "duration_ms": 2561,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Linux",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_526635",
+    "user_id": "usr_1005",
+    "feature": "dashboard",
+    "action": "create",
+    "timestamp": "2026-03-27 18:19:31",
+    "duration_ms": 3149,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_480142",
+    "user_id": "usr_1029",
+    "feature": "reports",
+    "action": "create",
+    "timestamp": "2026-03-13 13:44:31",
+    "duration_ms": 29211,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_710510",
+    "user_id": "usr_1020",
+    "feature": "integrations",
+    "action": "view",
+    "timestamp": "2026-03-29 14:11:31",
+    "duration_ms": 25024,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_679198",
+    "user_id": "usr_1168",
+    "feature": "settings",
+    "action": "view",
+    "timestamp": "2026-03-09 11:16:31",
+    "duration_ms": 1434,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_789855",
+    "user_id": "usr_1085",
+    "feature": "settings",
+    "action": "export",
+    "timestamp": "2026-04-05 20:00:31",
+    "duration_ms": 3190,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_144590",
+    "user_id": "usr_1120",
+    "feature": "billing",
+    "action": "update",
+    "timestamp": "2026-03-20 20:48:31",
+    "duration_ms": 5303,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_276559",
+    "user_id": "usr_1047",
+    "feature": "search",
+    "action": "export",
+    "timestamp": "2026-03-10 20:24:31",
+    "duration_ms": 26715,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_864148",
+    "user_id": "usr_1181",
+    "feature": "api",
+    "action": "click",
+    "timestamp": "2026-03-14 02:32:31",
+    "duration_ms": 7918,
+    "metadata": {
+      "browser": "Edge",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_704704",
+    "user_id": "usr_1186",
+    "feature": "integrations",
+    "action": "update",
+    "timestamp": "2026-03-20 17:01:31",
+    "duration_ms": 14181,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_301821",
+    "user_id": "usr_1135",
+    "feature": "settings",
+    "action": "create",
+    "timestamp": "2026-04-02 11:27:31",
+    "duration_ms": 13585,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_746326",
+    "user_id": "usr_1031",
+    "feature": "team_management",
+    "action": "create",
+    "timestamp": "2026-03-17 04:33:31",
+    "duration_ms": 147,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_883061",
+    "user_id": "usr_1064",
+    "feature": "api",
+    "action": "delete",
+    "timestamp": "2026-04-01 03:27:31",
+    "duration_ms": 4031,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_342069",
+    "user_id": "usr_1063",
+    "feature": "dashboard",
+    "action": "export",
+    "timestamp": "2026-04-04 02:39:31",
+    "duration_ms": 4456,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_702485",
+    "user_id": "usr_1000",
+    "feature": "integrations",
+    "action": "export",
+    "timestamp": "2026-04-03 02:04:31",
+    "duration_ms": 13644,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_568791",
+    "user_id": "usr_1036",
+    "feature": "api",
+    "action": "export",
+    "timestamp": "2026-03-17 20:09:31",
+    "duration_ms": 12183,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_791557",
+    "user_id": "usr_1132",
+    "feature": "settings",
+    "action": "update",
+    "timestamp": "2026-03-16 17:10:31",
+    "duration_ms": 20909,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_470334",
+    "user_id": "usr_1048",
+    "feature": "integrations",
+    "action": "update",
+    "timestamp": "2026-03-22 15:37:31",
+    "duration_ms": 1703,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_586101",
+    "user_id": "usr_1040",
+    "feature": "dashboard",
+    "action": "view",
+    "timestamp": "2026-03-14 09:31:31",
+    "duration_ms": 9572,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_401161",
+    "user_id": "usr_1036",
+    "feature": "settings",
+    "action": "create",
+    "timestamp": "2026-04-01 10:15:31",
+    "duration_ms": 551,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_714973",
+    "user_id": "usr_1116",
+    "feature": "billing",
+    "action": "create",
+    "timestamp": "2026-03-17 16:36:31",
+    "duration_ms": 6683,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_382737",
+    "user_id": "usr_1041",
+    "feature": "data_export",
+    "action": "click",
+    "timestamp": "2026-03-23 20:03:31",
+    "duration_ms": 25692,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_329504",
+    "user_id": "usr_1141",
+    "feature": "alerts",
+    "action": "export",
+    "timestamp": "2026-03-08 19:57:31",
+    "duration_ms": 8871,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_823420",
+    "user_id": "usr_1025",
+    "feature": "settings",
+    "action": "export",
+    "timestamp": "2026-03-21 14:17:31",
+    "duration_ms": 13328,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_352943",
+    "user_id": "usr_1072",
+    "feature": "settings",
+    "action": "click",
+    "timestamp": "2026-03-13 02:05:31",
+    "duration_ms": 18317,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_256338",
+    "user_id": "usr_1005",
+    "feature": "billing",
+    "action": "export",
+    "timestamp": "2026-03-13 06:38:31",
+    "duration_ms": 18710,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_302814",
+    "user_id": "usr_1047",
+    "feature": "reports",
+    "action": "export",
+    "timestamp": "2026-03-28 00:16:31",
+    "duration_ms": 14021,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_759393",
+    "user_id": "usr_1102",
+    "feature": "search",
+    "action": "delete",
+    "timestamp": "2026-03-19 12:58:31",
+    "duration_ms": 12549,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_356779",
+    "user_id": "usr_1083",
+    "feature": "dashboard",
+    "action": "create",
+    "timestamp": "2026-03-26 08:16:31",
+    "duration_ms": 8002,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_551750",
+    "user_id": "usr_1143",
+    "feature": "dashboard",
+    "action": "export",
+    "timestamp": "2026-04-04 20:28:31",
+    "duration_ms": 29457,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_146008",
+    "user_id": "usr_1052",
+    "feature": "data_export",
+    "action": "update",
+    "timestamp": "2026-03-20 01:00:31",
+    "duration_ms": 3462,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Windows",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_873874",
+    "user_id": "usr_1054",
+    "feature": "integrations",
+    "action": "create",
+    "timestamp": "2026-04-03 22:48:31",
+    "duration_ms": 483,
+    "metadata": {
+      "browser": "Edge",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_774254",
+    "user_id": "usr_1150",
+    "feature": "data_export",
+    "action": "click",
+    "timestamp": "2026-04-04 13:05:31",
+    "duration_ms": 7856,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_929527",
+    "user_id": "usr_1153",
+    "feature": "alerts",
+    "action": "export",
+    "timestamp": "2026-03-17 17:02:31",
+    "duration_ms": 15697,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_789225",
+    "user_id": "usr_1193",
+    "feature": "dashboard",
+    "action": "update",
+    "timestamp": "2026-03-11 17:14:31",
+    "duration_ms": 13594,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_628168",
+    "user_id": "usr_1149",
+    "feature": "integrations",
+    "action": "delete",
+    "timestamp": "2026-03-29 23:37:31",
+    "duration_ms": 22918,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_683309",
+    "user_id": "usr_1178",
+    "feature": "api",
+    "action": "view",
+    "timestamp": "2026-03-14 20:24:31",
+    "duration_ms": 18833,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_280426",
+    "user_id": "usr_1040",
+    "feature": "integrations",
+    "action": "export",
+    "timestamp": "2026-04-05 00:53:31",
+    "duration_ms": 6517,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_409329",
+    "user_id": "usr_1117",
+    "feature": "dashboard",
+    "action": "export",
+    "timestamp": "2026-03-23 16:25:31",
+    "duration_ms": 4507,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_484452",
+    "user_id": "usr_1160",
+    "feature": "settings",
+    "action": "export",
+    "timestamp": "2026-03-24 19:20:31",
+    "duration_ms": 2173,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_107993",
+    "user_id": "usr_1043",
+    "feature": "billing",
+    "action": "view",
+    "timestamp": "2026-03-20 18:21:31",
+    "duration_ms": 27720,
+    "metadata": {
+      "browser": "Edge",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_901549",
+    "user_id": "usr_1040",
+    "feature": "integrations",
+    "action": "view",
+    "timestamp": "2026-04-02 10:58:31",
+    "duration_ms": 14341,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_848365",
+    "user_id": "usr_1133",
+    "feature": "alerts",
+    "action": "export",
+    "timestamp": "2026-03-21 05:07:31",
+    "duration_ms": 19289,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_969034",
+    "user_id": "usr_1152",
+    "feature": "alerts",
+    "action": "export",
+    "timestamp": "2026-03-19 17:36:31",
+    "duration_ms": 14022,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_392736",
+    "user_id": "usr_1080",
+    "feature": "settings",
+    "action": "delete",
+    "timestamp": "2026-03-31 00:13:31",
+    "duration_ms": 25390,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_409890",
+    "user_id": "usr_1096",
+    "feature": "alerts",
+    "action": "update",
+    "timestamp": "2026-03-08 21:09:31",
+    "duration_ms": 19151,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_340897",
+    "user_id": "usr_1188",
+    "feature": "alerts",
+    "action": "view",
+    "timestamp": "2026-03-20 08:39:31",
+    "duration_ms": 29897,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "macOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_665209",
+    "user_id": "usr_1059",
+    "feature": "api",
+    "action": "click",
+    "timestamp": "2026-03-08 22:32:31",
+    "duration_ms": 28224,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_455584",
+    "user_id": "usr_1134",
+    "feature": "alerts",
+    "action": "view",
+    "timestamp": "2026-03-29 15:43:31",
+    "duration_ms": 18086,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_548497",
+    "user_id": "usr_1125",
+    "feature": "integrations",
+    "action": "click",
+    "timestamp": "2026-03-12 16:20:31",
+    "duration_ms": 20948,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_755192",
+    "user_id": "usr_1113",
+    "feature": "reports",
+    "action": "update",
+    "timestamp": "2026-03-14 03:30:31",
+    "duration_ms": 2726,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_814435",
+    "user_id": "usr_1070",
+    "feature": "billing",
+    "action": "view",
+    "timestamp": "2026-04-05 23:15:31",
+    "duration_ms": 995,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_438162",
+    "user_id": "usr_1042",
+    "feature": "search",
+    "action": "view",
+    "timestamp": "2026-04-04 01:52:31",
+    "duration_ms": 15854,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "iOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_160028",
+    "user_id": "usr_1161",
+    "feature": "search",
+    "action": "view",
+    "timestamp": "2026-03-14 19:42:31",
+    "duration_ms": 10351,
+    "metadata": {
+      "browser": "Edge",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_889084",
+    "user_id": "usr_1074",
+    "feature": "settings",
+    "action": "click",
+    "timestamp": "2026-04-04 06:12:31",
+    "duration_ms": 4947,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_647589",
+    "user_id": "usr_1196",
+    "feature": "reports",
+    "action": "click",
+    "timestamp": "2026-04-01 14:32:31",
+    "duration_ms": 20470,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_591650",
+    "user_id": "usr_1010",
+    "feature": "alerts",
+    "action": "update",
+    "timestamp": "2026-03-24 00:02:31",
+    "duration_ms": 19734,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_357543",
+    "user_id": "usr_1096",
+    "feature": "billing",
+    "action": "export",
+    "timestamp": "2026-03-27 21:41:31",
+    "duration_ms": 23820,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_524865",
+    "user_id": "usr_1096",
+    "feature": "search",
+    "action": "view",
+    "timestamp": "2026-03-30 10:55:31",
+    "duration_ms": 26239,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_437264",
+    "user_id": "usr_1094",
+    "feature": "dashboard",
+    "action": "create",
+    "timestamp": "2026-03-28 18:14:31",
+    "duration_ms": 19001,
+    "metadata": {
+      "browser": "Edge",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_755377",
+    "user_id": "usr_1120",
+    "feature": "dashboard",
+    "action": "update",
+    "timestamp": "2026-03-31 16:38:31",
+    "duration_ms": 19829,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_924729",
+    "user_id": "usr_1004",
+    "feature": "search",
+    "action": "export",
+    "timestamp": "2026-03-07 07:53:31",
+    "duration_ms": 4221,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_940951",
+    "user_id": "usr_1012",
+    "feature": "reports",
+    "action": "update",
+    "timestamp": "2026-03-29 07:57:31",
+    "duration_ms": 29270,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_998572",
+    "user_id": "usr_1164",
+    "feature": "api",
+    "action": "delete",
+    "timestamp": "2026-03-07 08:33:31",
+    "duration_ms": 28950,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_496453",
+    "user_id": "usr_1183",
+    "feature": "integrations",
+    "action": "delete",
+    "timestamp": "2026-03-17 21:39:31",
+    "duration_ms": 8875,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_248374",
+    "user_id": "usr_1178",
+    "feature": "team_management",
+    "action": "delete",
+    "timestamp": "2026-03-16 14:18:31",
+    "duration_ms": 5699,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_266296",
+    "user_id": "usr_1005",
+    "feature": "integrations",
+    "action": "update",
+    "timestamp": "2026-03-13 01:56:31",
+    "duration_ms": 12167,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_424623",
+    "user_id": "usr_1199",
+    "feature": "settings",
+    "action": "view",
+    "timestamp": "2026-03-23 22:12:31",
+    "duration_ms": 12885,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_471904",
+    "user_id": "usr_1192",
+    "feature": "billing",
+    "action": "create",
+    "timestamp": "2026-03-10 22:53:31",
+    "duration_ms": 13314,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_669868",
+    "user_id": "usr_1174",
+    "feature": "api",
+    "action": "create",
+    "timestamp": "2026-03-31 01:03:31",
+    "duration_ms": 22010,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_422677",
+    "user_id": "usr_1105",
+    "feature": "settings",
+    "action": "create",
+    "timestamp": "2026-03-21 05:12:31",
+    "duration_ms": 17478,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_486265",
+    "user_id": "usr_1061",
+    "feature": "alerts",
+    "action": "export",
+    "timestamp": "2026-03-21 07:53:31",
+    "duration_ms": 27311,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_588303",
+    "user_id": "usr_1156",
+    "feature": "dashboard",
+    "action": "export",
+    "timestamp": "2026-03-15 14:02:31",
+    "duration_ms": 9592,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_314580",
+    "user_id": "usr_1055",
+    "feature": "integrations",
+    "action": "create",
+    "timestamp": "2026-03-31 07:48:31",
+    "duration_ms": 19338,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_863836",
+    "user_id": "usr_1056",
+    "feature": "api",
+    "action": "view",
+    "timestamp": "2026-04-04 20:19:31",
+    "duration_ms": 19756,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_856287",
+    "user_id": "usr_1031",
+    "feature": "alerts",
+    "action": "view",
+    "timestamp": "2026-03-18 17:49:31",
+    "duration_ms": 19541,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_327312",
+    "user_id": "usr_1034",
+    "feature": "team_management",
+    "action": "export",
+    "timestamp": "2026-03-27 17:02:31",
+    "duration_ms": 29013,
+    "metadata": {
+      "browser": "Edge",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_187939",
+    "user_id": "usr_1192",
+    "feature": "search",
+    "action": "delete",
+    "timestamp": "2026-03-22 13:40:31",
+    "duration_ms": 3223,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_916749",
+    "user_id": "usr_1141",
+    "feature": "alerts",
+    "action": "view",
+    "timestamp": "2026-04-06 18:51:31",
+    "duration_ms": 26981,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_450841",
+    "user_id": "usr_1199",
+    "feature": "team_management",
+    "action": "view",
+    "timestamp": "2026-03-20 19:11:31",
+    "duration_ms": 19668,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_450069",
+    "user_id": "usr_1120",
+    "feature": "data_export",
+    "action": "create",
+    "timestamp": "2026-03-14 14:12:31",
+    "duration_ms": 19632,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_751226",
+    "user_id": "usr_1174",
+    "feature": "integrations",
+    "action": "update",
+    "timestamp": "2026-03-26 04:14:31",
+    "duration_ms": 11430,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "macOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_426346",
+    "user_id": "usr_1154",
+    "feature": "reports",
+    "action": "view",
+    "timestamp": "2026-03-10 07:24:31",
+    "duration_ms": 25392,
+    "metadata": {
+      "browser": "Safari",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_336814",
+    "user_id": "usr_1059",
+    "feature": "team_management",
+    "action": "delete",
+    "timestamp": "2026-03-22 13:11:31",
+    "duration_ms": 964,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_278887",
+    "user_id": "usr_1185",
+    "feature": "api",
+    "action": "click",
+    "timestamp": "2026-03-18 04:32:31",
+    "duration_ms": 4945,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_388379",
+    "user_id": "usr_1085",
+    "feature": "billing",
+    "action": "update",
+    "timestamp": "2026-04-04 21:48:31",
+    "duration_ms": 1295,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_883438",
+    "user_id": "usr_1010",
+    "feature": "billing",
+    "action": "export",
+    "timestamp": "2026-04-06 13:49:31",
+    "duration_ms": 16234,
+    "metadata": {
+      "browser": "Edge",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_929142",
+    "user_id": "usr_1190",
+    "feature": "dashboard",
+    "action": "delete",
+    "timestamp": "2026-03-15 20:57:31",
+    "duration_ms": 24556,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_144206",
+    "user_id": "usr_1049",
+    "feature": "dashboard",
+    "action": "delete",
+    "timestamp": "2026-03-09 17:41:31",
+    "duration_ms": 12898,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_957915",
+    "user_id": "usr_1195",
+    "feature": "dashboard",
+    "action": "update",
+    "timestamp": "2026-04-02 02:35:31",
+    "duration_ms": 2481,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_284033",
+    "user_id": "usr_1196",
+    "feature": "integrations",
+    "action": "create",
+    "timestamp": "2026-03-09 13:42:31",
+    "duration_ms": 1805,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_557431",
+    "user_id": "usr_1146",
+    "feature": "reports",
+    "action": "update",
+    "timestamp": "2026-03-17 08:37:31",
+    "duration_ms": 25103,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_649969",
+    "user_id": "usr_1067",
+    "feature": "settings",
+    "action": "export",
+    "timestamp": "2026-03-07 22:57:31",
+    "duration_ms": 8033,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_932371",
+    "user_id": "usr_1135",
+    "feature": "data_export",
+    "action": "click",
+    "timestamp": "2026-03-27 14:49:31",
+    "duration_ms": 15726,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_322256",
+    "user_id": "usr_1059",
+    "feature": "billing",
+    "action": "delete",
+    "timestamp": "2026-03-14 21:01:31",
+    "duration_ms": 3457,
+    "metadata": {
+      "browser": "Safari",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_735103",
+    "user_id": "usr_1012",
+    "feature": "alerts",
+    "action": "create",
+    "timestamp": "2026-03-19 05:19:31",
+    "duration_ms": 2224,
+    "metadata": {
+      "browser": "Safari",
+      "os": "Linux",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_116539",
+    "user_id": "usr_1182",
+    "feature": "data_export",
+    "action": "create",
+    "timestamp": "2026-03-19 18:39:31",
+    "duration_ms": 24879,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_918433",
+    "user_id": "usr_1168",
+    "feature": "settings",
+    "action": "delete",
+    "timestamp": "2026-03-17 04:16:31",
+    "duration_ms": 19770,
+    "metadata": {
+      "browser": "Edge",
+      "os": "macOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_252233",
+    "user_id": "usr_1137",
+    "feature": "billing",
+    "action": "delete",
+    "timestamp": "2026-03-25 03:28:31",
+    "duration_ms": 8233,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Linux",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_408708",
+    "user_id": "usr_1005",
+    "feature": "alerts",
+    "action": "create",
+    "timestamp": "2026-03-19 04:14:31",
+    "duration_ms": 28176,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Windows",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_213618",
+    "user_id": "usr_1047",
+    "feature": "integrations",
+    "action": "create",
+    "timestamp": "2026-03-13 19:15:31",
+    "duration_ms": 14186,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_527629",
+    "user_id": "usr_1159",
+    "feature": "dashboard",
+    "action": "delete",
+    "timestamp": "2026-03-22 19:39:31",
+    "duration_ms": 21079,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "iOS",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_132002",
+    "user_id": "usr_1164",
+    "feature": "data_export",
+    "action": "click",
+    "timestamp": "2026-03-14 17:45:31",
+    "duration_ms": 18504,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_441603",
+    "user_id": "usr_1171",
+    "feature": "search",
+    "action": "create",
+    "timestamp": "2026-03-17 16:07:31",
+    "duration_ms": 17146,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_976579",
+    "user_id": "usr_1072",
+    "feature": "dashboard",
+    "action": "create",
+    "timestamp": "2026-03-07 10:08:31",
+    "duration_ms": 21844,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_457920",
+    "user_id": "usr_1007",
+    "feature": "alerts",
+    "action": "click",
+    "timestamp": "2026-03-25 05:16:31",
+    "duration_ms": 11854,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "iOS",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_198039",
+    "user_id": "usr_1200",
+    "feature": "alerts",
+    "action": "update",
+    "timestamp": "2026-03-19 11:42:31",
+    "duration_ms": 13434,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "starter"
+    }
+  },
+  {
+    "event_id": "evt_689083",
+    "user_id": "usr_1123",
+    "feature": "team_management",
+    "action": "view",
+    "timestamp": "2026-03-16 02:08:31",
+    "duration_ms": 4874,
+    "metadata": {
+      "browser": "Firefox",
+      "os": "Android",
+      "plan": "business"
+    }
+  },
+  {
+    "event_id": "evt_699268",
+    "user_id": "usr_1086",
+    "feature": "reports",
+    "action": "create",
+    "timestamp": "2026-03-11 17:15:31",
+    "duration_ms": 8850,
+    "metadata": {
+      "browser": "Edge",
+      "os": "Android",
+      "plan": "pro"
+    }
+  },
+  {
+    "event_id": "evt_352288",
+    "user_id": "usr_1150",
+    "feature": "settings",
+    "action": "delete",
+    "timestamp": "2026-03-29 03:07:31",
+    "duration_ms": 1429,
+    "metadata": {
+      "browser": "Chrome",
+      "os": "Windows",
+      "plan": "enterprise"
+    }
+  },
+  {
+    "event_id": "evt_888878",
+    "user_id": "usr_1057",
+    "feature": "dashboard",
+    "action": "view",
+    "timestamp": "2026-03-16 07:37:31",
+    "duration_ms": 19773,
+    "metadata": {
+      "browser": "Edge",
+      "os": "iOS",
+      "plan": "starter"
+    }
+  }
+]

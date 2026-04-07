@@ -35,6 +35,7 @@ Every data source becomes a SQL table. Ask anything.
 | | Feature | Description |
 |---|---------|------------|
 | 🧠 | **AI Query Planner** | Claude converts natural language → multi-step SQL with chain-of-thought reasoning |
+| 📡 | **SSE Streaming** | Real-time Server-Sent Events stream every phase: schema → plan → step execution → result |
 | 🔄 | **Self-Correction** | Failed queries are automatically fixed and retried (up to 3x) |
 | 📧 | **Gmail Integration** | Real OAuth2 — your inbox becomes a queryable `gmail_messages` table |
 | 📊 | **Google Sheets** | Each spreadsheet tab auto-converts to a typed SQL table |
@@ -125,9 +126,12 @@ Now ask: *"show me my unread emails"* 🎉
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        React Frontend                           │
-│              Chat UI · Connector Grid · Schema Explorer          │
-└────────────────────────────┬────────────────────────────────────┘
-                             │ HTTP/JSON
+│         Chat UI · Live Query Viz · Connectors · Schema          │
+│                                                                  │
+│   ReadableStream reader ←──── SSE text/event-stream ────┐       │
+│   (parses event/data pairs,   phase │ plan │ step │ result)     │
+└────────────────────────────┬──────────────────────────┘          │
+                             │ POST /api/query/stream              │
 ┌────────────────────────────┴────────────────────────────────────┐
 │                      FastAPI Backend                             │
 │                                                                  │
@@ -135,6 +139,9 @@ Now ask: *"show me my unread emails"* 🎉
 │  │ Query Planner│→ │  Execution   │→ │  Self-Correction      │  │
 │  │ (Claude AI)  │  │  Engine      │  │  (retry on failure)   │  │
 │  └──────────────┘  └──────┬───────┘  └───────────────────────┘  │
+│         │                 │                                      │
+│     emit(plan)      emit(step_start)                            │
+│                     emit(step_complete)                          │
 │                           │                                      │
 │  ┌────────────────────────┴─────────────────────────────────┐   │
 │  │              Connector Registry                           │   │
@@ -145,15 +152,49 @@ Now ask: *"show me my unread emails"* 🎉
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### How a Query Flows
+### How a Query Flows (SSE Streaming)
+
+Unlike a traditional request-response cycle, DataQL streams every phase of query execution to the frontend in real-time using **Server-Sent Events (SSE)**.
 
 1. **User asks** a natural language question
-2. **Query Planner** sends question + full schema context to Claude
-3. **Claude returns** a structured JSON plan with SQL steps
-4. **Execution Engine** runs each step against the right connector
+2. **Frontend** `POST`s to `/api/query/stream` and reads the response body as a `ReadableStream`
+3. **Backend** returns `Content-Type: text/event-stream` with named events:
+   - `event: phase` — notifies the UI which phase is active (schema, planning, executing, summarizing)
+   - `event: plan` — sends the full query plan with AI reasoning and SQL steps
+   - `event: step_start` — marks a specific step as running (shows spinner)
+   - `event: step_complete` — sends execution results with timing, row count, columns, data
+   - `event: result` — final answer + reliability score
+   - `event: error` — error message if anything fails
+4. **Frontend** parses each SSE frame, updates React state, and renders live:
+   - Phase indicator strip lights up: 🔍 Schema → 🧠 Planning → ⚡ Executing → ✨ Results
+   - AI reasoning appears the moment the plan is generated
+   - Each SQL step shows a spinner → ✓ checkmark with execution time
 5. **Self-Correction** catches SQL errors → asks Claude to fix → retries
 6. **Reliability Score** is computed from retries, timing, and data quality
-7. **Answer** is formatted and returned to the chat
+
+### SSE Protocol Detail
+
+Each event follows the standard SSE format:
+```
+event: step_complete
+data: {"step_id":1,"status":"completed","execution_time_ms":12.4,"row_count":5,...}
+
+```
+
+The frontend uses `res.body.getReader()` (Fetch API ReadableStream) rather than `EventSource` because SSE via `EventSource` only supports `GET` — we need `POST` with a JSON body.
+
+```javascript
+const reader = res.body.getReader();
+const decoder = new TextDecoder();
+let buffer = '';
+
+while (true) {
+  const { done, value } = await reader.read();
+  if (done) break;
+  buffer += decoder.decode(value, { stream: true });
+  // Parse event: and data: lines, dispatch to React state
+}
+```
 
 ---
 
@@ -185,7 +226,7 @@ SLACK_BOT_TOKEN=xoxb-your-token
 ```
 dataql/
 ├── backend/
-│   ├── main.py                 # FastAPI routes & orchestration
+│   ├── main.py                 # FastAPI routes, SSE streaming endpoint
 │   ├── query_planner.py        # NL → SQL via Claude
 │   ├── execution_engine.py     # Step-by-step plan executor
 │   ├── self_correction.py      # Auto-fix failed queries
@@ -198,16 +239,17 @@ dataql/
 │   └── schema_introspector.py  # Table/column discovery
 ├── frontend/
 │   ├── src/
-│   │   ├── App.jsx             # Main app shell
+│   │   ├── App.jsx             # Main shell + SSE stream consumer
 │   │   ├── components/
-│   │   │   ├── ChatPanel.jsx       # Conversational interface
+│   │   │   ├── ChatPanel.jsx       # Chat + LiveQueryProcess visualizer
 │   │   │   ├── ConnectorsPage.jsx  # Dark-themed connector grid
 │   │   │   ├── SchemaExplorer.jsx  # Database schema viewer
 │   │   │   └── ThreadSidebar.jsx   # Chat thread navigation
-│   │   └── index.css           # Premium dark theme
+│   │   └── index.css           # Premium dark theme + streaming animations
 │   └── index.html
 └── docs/
-    └── use-cases.md
+    ├── use-cases.md
+    └── streaming-architecture.md  # SSE streaming deep-dive
 ```
 
 ---

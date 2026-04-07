@@ -352,6 +352,13 @@ export default function ConnectorsPage({ isOpen, onClose }) {
     }
   }, [isOpen]);
 
+  // Close on Escape key
+  useEffect(() => {
+    const handleKey = (e) => { if (e.key === 'Escape' && isOpen) onClose(); };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [isOpen, onClose]);
+
   const connected = connectors.filter(c => c.connected);
 
   const filteredIntegrations = useMemo(() => {
@@ -387,6 +394,10 @@ export default function ConnectorsPage({ isOpen, onClose }) {
         {/* ─── Top Bar ─── */}
         <header className="cx-topbar">
           <div className="cx-topbar-left">
+            <button className="cx-back-btn" onClick={onClose} title="Back to Chat (Esc)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+              <span>Chat</span>
+            </button>
             <div className="cx-logo-mark">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="url(#cxg)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><defs><linearGradient id="cxg" x1="2" y1="2" x2="22" y2="22"><stop stopColor="#818cf8"/><stop offset="1" stopColor="#6366f1"/></linearGradient></defs></svg>
             </div>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import ChatPanel from './components/ChatPanel';
 import ThreadSidebar from './components/ThreadSidebar';
 import SchemaExplorer from './components/SchemaExplorer';
@@ -16,6 +16,8 @@ export default function App() {
   const [schemaOpen, setSchemaOpen] = useState(false);
   const [schemaTab, setSchemaTab] = useState('connectors');
   const [connectorsOpen, setConnectorsOpen] = useState(false);
+  const [streamState, setStreamState] = useState(null);
+  const abortRef = useRef(null);
 
   // Fetch schema on mount
   useEffect(() => {
@@ -67,9 +69,10 @@ export default function App() {
     setSchemaOpen(true);
   };
 
-  const handleSend = async (question) => {
+  const handleSend = useCallback(async (question) => {
     // Auto-create thread if none active
-    if (!activeThreadId) {
+    let threadId = activeThreadId;
+    if (!threadId) {
       const id = crypto.randomUUID();
       const newThread = {
         id,
@@ -79,12 +82,13 @@ export default function App() {
       };
       setThreads(prev => [newThread, ...prev]);
       setActiveThreadId(id);
+      threadId = id;
     }
 
     // Update thread title from first message
     if (messages.length === 0) {
       setThreads(prev => prev.map(t =>
-        t.id === activeThreadId || (!activeThreadId && prev[0]?.id === t.id)
+        t.id === threadId
           ? { ...t, title: question.slice(0, 50) + (question.length > 50 ? '...' : '') }
           : t
       ));
@@ -92,15 +96,14 @@ export default function App() {
 
     setMessages(prev => [...prev, { role: 'user', content: question }]);
     setIsLoading(true);
+    setStreamState({ phase: 'idle', plan: null, steps: [], completedSteps: [], error: null });
 
     try {
-      const res = await fetch(`${API_BASE}/api/query`, {
+      // Use SSE streaming endpoint
+      const res = await fetch(`${API_BASE}/api/query/stream`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          question,
-          thread_id: activeThreadId,
-        }),
+        body: JSON.stringify({ question, thread_id: threadId }),
       });
 
       if (!res.ok) {
@@ -108,42 +111,130 @@ export default function App() {
         throw new Error(err.detail || 'Query failed');
       }
 
-      const data = await res.json();
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let finalPlan = null;
+      let finalArtifacts = [];
 
-      // Mark plan steps as completed
-      if (data.plan && data.plan.steps) {
-        data.plan.steps = data.plan.steps.map(s => ({
-          ...s,
-          status: data.artifacts.find(a => a.step_id === s.step_id)?.status || 'completed',
-        }));
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        let eventType = '';
+        let eventData = '';
+
+        for (const line of lines) {
+          if (line.startsWith('event: ')) {
+            eventType = line.slice(7).trim();
+          } else if (line.startsWith('data: ')) {
+            eventData = line.slice(6).trim();
+          } else if (line === '' && eventType && eventData) {
+            // Process the event
+            try {
+              const data = JSON.parse(eventData);
+
+              switch (eventType) {
+                case 'phase':
+                  setStreamState(prev => ({
+                    ...prev,
+                    phase: data.phase,
+                    message: data.message,
+                  }));
+                  break;
+
+                case 'plan':
+                  finalPlan = data;
+                  setStreamState(prev => ({
+                    ...prev,
+                    plan: data,
+                    steps: data.steps,
+                    phase: 'executing',
+                  }));
+                  break;
+
+                case 'step_start':
+                  setStreamState(prev => {
+                    const updated = (prev.steps || []).map(s =>
+                      s.step_id === data.step_id ? { ...s, status: 'running' } : s
+                    );
+                    return { ...prev, steps: updated };
+                  });
+                  break;
+
+                case 'step_complete':
+                  finalArtifacts.push(data);
+                  setStreamState(prev => {
+                    const updated = (prev.steps || []).map(s =>
+                      s.step_id === data.step_id ? { ...s, status: data.status === 'failed' ? 'failed' : 'completed' } : s
+                    );
+                    return {
+                      ...prev,
+                      steps: updated,
+                      completedSteps: [...(prev.completedSteps || []), data],
+                    };
+                  });
+                  break;
+
+                case 'result':
+                  // Final result — add the assistant message
+                  setStreamState(prev => ({ ...prev, phase: 'done' }));
+
+                  // Build plan with completed statuses
+                  const planForMessage = finalPlan ? {
+                    ...finalPlan,
+                    steps: finalPlan.steps.map(s => ({
+                      ...s,
+                      status: finalArtifacts.find(a => a.step_id === s.step_id)?.status || 'completed',
+                    })),
+                  } : null;
+
+                  setMessages(prev => [
+                    ...prev,
+                    {
+                      role: 'assistant',
+                      content: data.answer,
+                      plan: planForMessage,
+                      artifacts: finalArtifacts,
+                      meta: {
+                        time: data.total_execution_time_ms,
+                        retries: data.retries,
+                        reliability_score: data.reliability_score,
+                      },
+                    },
+                  ]);
+                  break;
+
+                case 'error':
+                  setStreamState(prev => ({ ...prev, error: data.message }));
+                  setMessages(prev => [
+                    ...prev,
+                    { role: 'assistant', content: `❌ Error: ${data.message}` },
+                  ]);
+                  break;
+              }
+            } catch (parseErr) {
+              console.error('Failed to parse SSE data:', parseErr);
+            }
+            eventType = '';
+            eventData = '';
+          }
+        }
       }
-
-      setMessages(prev => [
-        ...prev,
-        {
-          role: 'assistant',
-          content: data.answer,
-          plan: data.plan,
-          artifacts: data.artifacts,
-          meta: {
-            time: data.total_execution_time_ms,
-            retries: data.retries,
-            reliability_score: data.reliability_score,
-          },
-        },
-      ]);
     } catch (err) {
       setMessages(prev => [
         ...prev,
-        {
-          role: 'assistant',
-          content: `❌ Error: ${err.message}`,
-        },
+        { role: 'assistant', content: `❌ Error: ${err.message}` },
       ]);
     } finally {
       setIsLoading(false);
+      setStreamState(null);
     }
-  };
+  }, [activeThreadId, messages.length]);
 
   // Sync messages back to thread on change
   useEffect(() => {
@@ -170,6 +261,7 @@ export default function App() {
           messages={messages}
           onSend={handleSend}
           isLoading={isLoading}
+          streamState={streamState}
         />
       </div>
 

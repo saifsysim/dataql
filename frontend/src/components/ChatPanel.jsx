@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 
+const API_BASE = 'http://localhost:8000';
+
 const SUGGESTIONS = [
   { icon: '👥', text: "How many customers do we have?" },
   { icon: '💰', text: "What is the total revenue by product category?" },
@@ -98,7 +100,6 @@ function InlineExecution({ artifacts, activeTab, onTabChange }) {
                     {artifacts
                       .filter(art => art.step_id === a.step_id)
                       .map(art => {
-                        // Find the plan step with SQL
                         return art.columns
                           ? `-- Result: ${art.row_count || 0} rows, ${art.columns.length} columns\nSELECT ${art.columns.join(', ')}\n-- Executed in ${art.execution_time_ms}ms`
                           : `-- ${art.description}\n-- Executed in ${art.execution_time_ms}ms`;
@@ -171,7 +172,116 @@ function InlineExecution({ artifacts, activeTab, onTabChange }) {
   );
 }
 
-export default function ChatPanel({ messages, onSend, isLoading }) {
+// ── Live Query Building Process ──────────────────────────
+
+function LiveQueryProcess({ streamState }) {
+  if (!streamState) return null;
+
+  const { phase, plan, steps, completedSteps, error } = streamState;
+
+  return (
+    <div className="live-process">
+      {/* Phase indicator */}
+      <div className="live-phases">
+        <PhaseStep
+          label="Schema"
+          icon="🔍"
+          status={phase === 'schema' ? 'active' : (phase !== 'idle' ? 'done' : 'pending')}
+        />
+        <div className="live-phase-connector" />
+        <PhaseStep
+          label="Planning"
+          icon="🧠"
+          status={phase === 'planning' ? 'active' : (['executing', 'summarizing', 'done'].includes(phase) ? 'done' : 'pending')}
+        />
+        <div className="live-phase-connector" />
+        <PhaseStep
+          label="Executing"
+          icon="⚡"
+          status={phase === 'executing' ? 'active' : (['summarizing', 'done'].includes(phase) ? 'done' : 'pending')}
+        />
+        <div className="live-phase-connector" />
+        <PhaseStep
+          label="Results"
+          icon="✨"
+          status={phase === 'summarizing' ? 'active' : (phase === 'done' ? 'done' : 'pending')}
+        />
+      </div>
+
+      {/* Live reasoning */}
+      {plan?.reasoning && (
+        <div className="live-reasoning">
+          <div className="live-reasoning-label">
+            <span className="live-dot" />
+            AI Reasoning
+          </div>
+          <p>{plan.reasoning}</p>
+        </div>
+      )}
+
+      {/* Live steps */}
+      {steps && steps.length > 0 && (
+        <div className="live-steps">
+          {steps.map((step) => {
+            const completed = completedSteps?.find(c => c.step_id === step.step_id);
+            const isRunning = !completed && phase === 'executing';
+            const isPending = !completed && !isRunning;
+            const stepStatus = completed
+              ? (completed.status === 'failed' ? 'failed' : 'done')
+              : isRunning ? 'running' : 'pending';
+
+            return (
+              <div key={step.step_id} className={`live-step live-step-${stepStatus}`}>
+                <div className="live-step-indicator">
+                  {stepStatus === 'done' ? (
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="3"><path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  ) : stepStatus === 'failed' ? (
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f87171" strokeWidth="3"><path d="M18 6L6 18M6 6l12 12" strokeLinecap="round"/></svg>
+                  ) : stepStatus === 'running' ? (
+                    <div className="live-step-spinner" />
+                  ) : (
+                    <div className="live-step-pending-dot" />
+                  )}
+                </div>
+                <div className="live-step-body">
+                  <div className="live-step-desc">{step.description}</div>
+                  <div className="live-step-meta">
+                    <span className="live-step-type">{step.step_type}</span>
+                    {step.sql && <code className="live-step-sql">{step.sql}</code>}
+                    {completed?.execution_time_ms != null && (
+                      <span className="live-step-time">{completed.execution_time_ms}ms</span>
+                    )}
+                    {completed?.row_count != null && (
+                      <span className="live-step-rows">{completed.row_count} rows</span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {error && (
+        <div className="live-error">❌ {error}</div>
+      )}
+    </div>
+  );
+}
+
+function PhaseStep({ label, icon, status }) {
+  return (
+    <div className={`live-phase live-phase-${status}`}>
+      <span className="live-phase-icon">{icon}</span>
+      <span className="live-phase-label">{label}</span>
+      {status === 'active' && <div className="live-phase-pulse" />}
+    </div>
+  );
+}
+
+// ── Main Chat Panel ──────────────────────────────────
+
+export default function ChatPanel({ messages, onSend, isLoading, streamState }) {
   const [input, setInput] = useState('');
   const [expandedPlans, setExpandedPlans] = useState(new Set());
   const [executionTabs, setExecutionTabs] = useState({}); // msgIndex -> 'code' | 'output'
@@ -180,7 +290,7 @@ export default function ChatPanel({ messages, onSend, isLoading }) {
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
+  }, [messages, streamState]);
 
   useEffect(() => {
     if (!isLoading && inputRef.current) {
@@ -226,7 +336,7 @@ export default function ChatPanel({ messages, onSend, isLoading }) {
 
       {/* Messages */}
       <div className="playground-messages">
-        {messages.length === 0 ? (
+        {messages.length === 0 && !isLoading ? (
           <div className="playground-empty">
             <div className="playground-empty-icon">⚡</div>
             <h2>Talk to your data</h2>
@@ -305,7 +415,22 @@ export default function ChatPanel({ messages, onSend, isLoading }) {
               </div>
             ))}
 
-            {isLoading && (
+            {/* Live streaming state */}
+            {isLoading && streamState && (
+              <div className="playground-msg assistant">
+                <div className="playground-msg-avatar">
+                  <div className="avatar-ai">QL</div>
+                </div>
+                <div className="playground-msg-body">
+                  <div className="ai-response">
+                    <LiveQueryProcess streamState={streamState} />
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Fallback loading (no stream data yet) */}
+            {isLoading && !streamState && (
               <div className="playground-msg assistant">
                 <div className="playground-msg-avatar">
                   <div className="avatar-ai">QL</div>
@@ -314,7 +439,7 @@ export default function ChatPanel({ messages, onSend, isLoading }) {
                   <div className="ai-response">
                     <div className="ai-thinking">
                       <div className="thinking-pulse"></div>
-                      Analyzing your question and building a query plan...
+                      Connecting to DataQL...
                     </div>
                   </div>
                 </div>
